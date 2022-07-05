@@ -1,0 +1,16 @@
+ABRIR GIT BASH
+digitar cd Documents/Monique/HTML/projeto e de enter
+
+* para iniciar o repositorio / novo repositorio
+criar o repositorio no github
+ir ate a pasta pelo gitbash e digitar "git init"
+digitar git status para ver o que foi modificado - se tiver vermelho, precisa incluir, se tiver verde ja ta incluido
+digitar git add . (o ponto significa "all")
+digitat git commit -m "mensagem do commit"
+digitar git push -u origin main
+
+* para salvar alteracoes em repositorios existentes
+digitar git status para ver o que foi modificado - se tiver vermelho, precisa incluir, se tiver verde ja ta incluido
+digitar git add . (o ponto significa "all")
+digitat git commit -m "mensagem do commit"
+digitar git push

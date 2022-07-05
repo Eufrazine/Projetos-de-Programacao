@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tabelas</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="Monique Caggiano">
+    <meta name="description" content="Tabelas">
+</head>
+
+<body>
+    <!--Tag	Descrição
+        <table>	Define uma tabela
+        <th>	Define um cabeçalho de tabela
+        <tr>	Define uma linha de tabela
+        <td>	Define uma célula de tabela
+        <caption>	Define um título de tabela
+        <colgroup>	Define um grupo de colunas de tabela
+        <col>	Define os valores de atributo para uma ou mais colunas em uma tabela
+        <thead>	Define um cabeçalho de tabela
+        <tbody>	Define o corpo de uma tabela
+        <tfoot>	Defines o rodapé (footer) de uma tabela
+
+        -Atributo da Tabela Descrição
+        border Espessura da borda
+        width Largura da tabela
+        height Altura da tabela
+        align Podem ser alinhadas à esquerda / direita / centro
+        cellpadding Especifica o deslocamento do texto em relação às bordas de cada célula da tabela.
+        cellspacing Especifica o espaçamento entre cada célula da tabela.
+        bgcolor Atributo que define a cor de fundo da tabela
+        background Este atributo define a imagem de fundo para a tabela-->
+
+    <table border="4" bgcolor="#5F9EA0">
+        <tr>
+            <td>linha 1, célula 1</td>
+            <td>linha 1, célula 2</td>
+        </tr>
+        <tr>
+            <td>linha 2, célula 1</td>
+            <td>linha 2, célula 2</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table border="1" bgcolor="#ccc" width="50%">
+        <!--width="50%" Vai pegar 50% da página -->
+        <tr>
+            <th>Posição</th>
+            <!--É tipo o titulo da tabela/informações-->
+            <th>Time</th>
+            <th>Jogos</th>
+            <th>Vitória</th>
+            <th>Empates</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sp-sp</td>
+            <td>46</td>
+            <td>21</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Palmeiras</td>
+            <td>20</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table border="2" bgcolor="#ADD8E6" width="50%">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr align="center">
+            <td>011</td>
+            <td>Notebook</td>
+            <td>R$2.500,00</td>
+        </tr>
+        <tr align="center">
+            <td>002</td>
+            <td>Tablet</td>
+            <td>R$999,00</td>
+        </tr>
+
+        <tr align="right" valign="bottom">
+            <!--valign é a posição tipo baixo/cima (acho)-->
+            <td rowspan="2">Desconto</td> <!-- rowspan Junta com a linha de baixo -->
+            <td colspan="2">Cupom = R$10,00</td>
+            <!--rowspan Junta com a linha do lado -->
+        </tr>
+        <tr align="left">
+            <td colspan="2">Cupom = R$12.00</td>
+        </tr>
+        <tr align="center">
+            <td>Total</td>
+            <td colspan="2">3.497,00</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table border="1" width="500" height="250">
+        <tr>
+            <td valign="bottom" align="right">Teste</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <hr>
+
+</body>
+
+</html>

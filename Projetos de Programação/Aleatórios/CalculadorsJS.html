@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Teste JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="Monique Caggiano">
+    <meta name="description" content="Teste JS">
+    <style>
+        input,
+        select,
+        h1 {
+            height: 50px;
+            font-size: 30px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        input:hover,
+        select:hover {
+            background-color: #cdecf8;
+            border: 3px solid #007daf;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="modificah1">Calculadora</h1>
+    <input type="number" id="n1"><br>
+    <input type="number" id="n2"><br>
+    <select name="" id="iSelect">
+        <option value="soma">soma</option>
+        <option value="sub">subtração</option>
+        <option value="multi">multiplicação</option>
+        <option value="divisao">divisão</option>
+    </select>
+    <br>
+    <input type="button" value="Total" onclick="soma()">
+    <h1 id="total">0,00</h1>
+    <script>
+        /*$idade = number.parseInt('17')
+        if ($idade = 18) {
+            alert("de Maior")
+        } else {
+            alert("de Menor") 
+        }
+
+        var $msn = "Boa Tarde, "
+            var $nome = "José!"
+            document.getElementById("modificah1").innerHTML = $msn + $nome  
+            alert($msn + $nome) 
+            var $numero1 = Number.parseInt(window.prompt("Digite o primeiro número")) 
+            var $numero2 = Number.parseInt(window.prompt("Digite o segundo número")) 
+            var $total = $numero1 + $numero2
+            alert($total)*/
+
+        function soma() {
+            var $n1 = Number.parseInt(document.getElementById("n1").value)
+            var $n2 = Number.parseInt(document.getElementById("n2").value)
+            var $total
+            var $opcao = document.getElementById("iSelect").value
+            if ($opcao == "soma") {
+                $total = $n1 + $n2
+            } else if ($opcao == "sub") {
+                $total = $n1 - $n2
+            } else if ($opcao == "multi") {
+                $total = $n1 * $n2
+            } else {
+                $total = $n1 / $n2
+            }
+            document.getElementById("total").innerHTML = $total
+        }
+    </script>
+</body>
+
+</html>

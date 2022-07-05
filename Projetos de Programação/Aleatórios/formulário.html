@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="Monique Caggiano">
+    <meta name="description" content="Trabalhando com formulários">
+</head>
+
+<!--Um formulário é uma área que pode conter elementos de formulário.
+Os elementos de formulário são elementos que permitem o usuário entrar informação 
+(como campos de texto, campos de área de texto, menus drop-down, botões radiais, caixas de seleção, etc.) em um formulário.
+Um formulário é definido pela tag <form>. 
+#Tags de Formulário
+Tag	       Descrição
+<form>	   Define um formulário para entradas do usuário
+<input>	   Define um campo de entrada
+<textarea> Define uma área de texto (um controle de entrada de texto multi-linhas)
+<label>	   Define um rótulo para um controle
+<fieldset> Define um conjunto de campos
+<legend>   Define um título para um conjunto de campos
+<select>   Define uma lista selecionável (uma caixa drop-down)
+<optgroup> Define um grupo de opção
+<option>   Define uma opção em uma caixa drop-down
+<button>   Define um botão para pressionar
+<isindex>  Desaprovada. Use <input> em vez    
+-->
+
+<body>
+    <form name="nContato" method="post" action="gravasDados">
+        <!--GET ou POST, a diferença entre eles está no modo como os dados são empacotados. O método
+        Post é utilizado geralmente em formulários de postagem de dados, por exemplo, em um cadastro ou em
+        formulários de contato. O método Get é utilizado na consulta de dados, como por exemplo em um formulário
+        de busca.-->
+        <fieldset>
+            <legend>Dados Cadastrais</legend>
+            <label for="iNome">Nome: </label><br>
+            <!--objetos (hidden/textarea/select/checkbox/email/input/radio/button/text/password)-->
+            <input type="text" name="nNome" id="iNome" size="45" maxlength="45" placeholder="Nome completo">
+            <br><br>
+            <label for="iEmail">Email: </label><br>
+            <input type="email" name="nEmail" id="iEmail" size="45" maxlength="45">
+            <br><br>
+            <label for="iSenha">Senha: </label><br>
+            <input type="password" name="nSenha" id="iSenha" size="15" maxlength="10">
+            <br><br>
+            <label for="iMsg">Deixe sua Mensagem: </label><br>
+            <textarea name="nMsg" id="iMsg" placeholder="Deixe sua Mensagem" cols="42" rows="5"></textarea>
+            <!--O cols é a mesma coisa do size do input, e o rows as linhas.-->
+            <!--Outros tipos para usar em um formulário
+            Botões Radiais
+            Botões Radiais são usados quando você quer que o usuário selecione uma entre uma quantidade limitada de escolhas.
+            <form>
+            <input type="radio" name="sex" value="male"> Masculino
+            <br>
+            <input type="radio" name="sex" value="female"> Feminino
+            </form>
+                Caixas de Seleção
+            As Caixas de Seleção são usadas quando você quer que o usuário selecione uma ou mais opções de uma quantidade limitada de escolhas.
+            <form>
+            <input type="checkbox" name="bike">
+            Eu tenho uma bicicleta
+            <br>
+            <input type="checkbox" name="car">
+            Eu tenho um carro
+            </form>-->
+            <br><br>
+            <input type="submit" name="nEnviar" id="iEnviar">
+        </fieldset>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="iTelefone">Telefone: </label>
+            <input type="tel" name="nTelefone" id="iTelefone" maxlength="14" placeholder="(XX)XXXXX-XXXX">
+            <br><br>
+            <label for="iDate">Dara de nascimento</label>
+            <input type="date" name="nData" id="iData">
+            <br><br>
+            <label for="iSexo">Sexo: </label><br>
+            <select name="nSexo" id="iSexo">
+                <option value="N">Prefiro não informar</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <!--Para definir o valor padrão de um elemento <input> você tem que usar o atributo value-->
+            </select>
+            <br><br>
+            <label for="iCor">Cor favorita: </label> 
+            <input type="color" id="iCor" name="nCor"> <!--cor pode ser em qualquer jeito inclusive em #(56770)-->
+
+        </fieldset>
+        <fieldset>
+            <legend>Perguntas</legend>
+            <label for="grupo1">Qual a sua idade: </label><br>
+            <input type="radio" value="grupo1" name="nIdade" checked>1 - 15 <br> <!--checked deixa a opção selecionada-->
+            <input type="radio" value="grupo2" name="nIdade" >16 - 30 <br>
+            <input type="radio" value="grupo3" name="nIdade">31 - 45 <br>
+            <input type="radio" value="grupo4" name="nIdade" disabled>46 - 60 <!--disabled deixa a opção desabilitada-->
+            <br><br>
+            <label for="html">Escolha uma Linguagem</label><br>
+            <input type="checkbox" name="nHtml" value="html" checked>HTML <br>
+            <input type="checkbox" name="nCss" value="css">CSS <br>
+            <input type="checkbox" name="nJS" value="js">JAVASCRIPT <br>
+            <br><br>
+            <label for="iNota">Nota do Curso:</label><br>
+            0<input type="range" id="iNota" min="0" max="10" step="2">10 <!--step pula, no caso de 2 em 2-->
+        </fieldset>
+        <fieldset>
+            <input type="button" value="ok"> <!--Só para ver se tudo foi feito-->
+            <input type="reset" value="apagar"> <!--Resetar os dados-->
+            <input type="submit" value="Enviar"> <!--Enviar, no caso para o "gravarDados"-->
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

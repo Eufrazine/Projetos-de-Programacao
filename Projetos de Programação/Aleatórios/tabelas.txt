@@ -1,0 +1,44 @@
+O atributo “rowspan” adiciona um tamanho maior (sempre um número inteiro) 
+a um núcleo de cima para baixo. E o atributo “colspan” adiciona uma 
+quantidade de núcleos a mais da esquerda para a direita, “comendo” os demais em seu caminho.
+
+
+-Tag	Descrição
+
+<table>	Define uma tabela
+<th>	Define um cabeçalho de tabela
+<tr>	Define uma linha de tabela
+<td>	Define uma célula de tabela
+<caption>	Define um título de tabela
+<colgroup>	Define um grupo de colunas de tabela
+<col>	Define os valores de atributo para uma ou mais colunas em uma tabela
+<thead>	Define um cabeçalho de tabela
+<tbody>	Define o corpo de uma tabela
+<tfoot>	Defines o rodapé (footer) de uma tabela
+
+
+-Atributo da Tabela Descrição
+
+border Espessura da borda
+width Largura da tabela
+height Altura da tabela
+align Podem ser alinhadas à esquerda / direita / centro
+cellpadding Especifica o deslocamento do texto em relação às bordas de cada célula da tabela.
+cellspacing Especifica o espaçamento entre cada célula da tabela.
+bgcolor Atributo que define a cor de fundo da tabela
+background Este atributo define a imagem de fundo para a tabela
+
+
+O próximo atributo é o “frame”. Ela dá particularidades especiais à tabela. 
+Veja o exemplo abaixo:
+
+-Atributo	Descrição
+Box	    Quatro lados visíveis
+Border	Quatro lados visíveis
+Above	Lado superior visível
+Bellow	Lado inferior visível
+Hsides	Lados superior e inferior visíveis
+Vsides	Lados esquerdos e direito visíveis
+Lhs	Lado esquerdo visível
+Rhs	Lado direito visível
+Void	Sem lados visíveis

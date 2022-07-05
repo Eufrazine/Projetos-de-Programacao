@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.responsivo {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    height: 500px;
+
+    background-color: #00ffff;
+}

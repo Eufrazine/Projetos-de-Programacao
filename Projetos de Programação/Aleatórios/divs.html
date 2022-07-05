@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Div</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="Monique Caggiano">
+    <meta name="description" content="Trabalhando com Div">
+    <style type="text/css">
+        #topo {
+            background-color: red;
+            text-align: center;
+        }
+        #imagemTopo {
+            width: 100px;
+            /* border-right: 10px solid black;
+            border-left: 10px dotted palegreen; */
+            border: 30px; /* Só a borda mesmo */
+            margin: 10px 0px 10px 0px; /* O espaço em volta, por volta da borda */
+            padding: 10px; /* O espaço dentro, no caso, entre a imagem e a borda */
+        }
+
+        #menu {
+            text-align: right;
+            background-color:deepskyblue;
+        }
+        ul{
+            font-style: italic;
+            font-weight: bold;
+            font-family: Verdana, Tahoma, sans-serif;
+            text-transform: uppercase;
+            list-style:none;
+
+        }
+        li{
+            border: 2px black solid;
+            background-color: #b9bebe;
+            display:inline-block;
+            text-align: center;
+            padding: 5px;
+            width: 125px;
+            margin: 0px 5px 0px 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        #conteudo {
+            background-color: #24e980;
+            color: yellow;
+            text-align: center;
+        }
+        #mario{
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo">
+        <img id="imagemTopo" src="imgs/pato.png" alt="pato">
+        <!--<img id="imagemTopo" src="imgs/mario.jpeg" alt="mario">  aqui podemos ver mais claramente sobre o border, margin e padding -->
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Valores</a></li>
+        </ul>
+    </div>
+
+    <div id="conteudo">
+        <h1>Título</h1>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Manduma pindureta quium dia nois paga. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Detraxit consequat et quo num tendi nada.</p>
+        <img src="imgs/mario.jpeg" alt="mario" id="mario">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.estilo1 {
+  font-family: cursive;
+  text-align: center;
+  border: 2px solid cadetblue;
+  padding: 30px;
+  background-color: ghostwhite;
+  color: teal;
+  font-size: 23px;
+}
+.estilo2 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 2px solid plum;
+  padding: 30px;
+  background-color: mistyrose;
+  color: palevioletred;
+  font-size: 23px;
+}
+input {
+  height: 30px;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: royalblue;
+  background-color: cornsilk;
+  border: 3px solid royalblue;
+}
