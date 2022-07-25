@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+
+button{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(59, 56, 56);
+    color: aliceblue;
+}

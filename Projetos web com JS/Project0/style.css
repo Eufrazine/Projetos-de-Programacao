@@ -1,0 +1,10 @@
+*{margin: 0px;}
+
+h1{
+    background-color: cornflowerblue;
+    padding: 5px;
+    color: cornsilk;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}

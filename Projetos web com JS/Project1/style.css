@@ -1,0 +1,7 @@
+body{
+    height: 100vh; 
+    /* viewport height, é uma altura virtual do nosso site */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
